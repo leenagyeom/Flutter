@@ -2,19 +2,24 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.purple,
-        body: Center(
-          child: Text(
-            'hello nagyeom!',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 20.0,
-            ),
+    MaterialApp(home: HomeScreen()),
+  );
+}
+
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.amber,
+      body: Center(
+        child: Text(
+          'hello leena!',
+          style: TextStyle(
+            color: Colors.cyan,
+            fontSize: 20.0,
           ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }
